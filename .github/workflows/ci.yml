@@ -5,8 +5,9 @@ on: [push]
 jobs:
   build-backend:
     runs-on: ubuntu-latest
-    env:
-      working-directory: memo-backend
+    defaults:
+      run:
+        working-directory: memo-backend
 
     steps:
       - uses: actions/checkout@v2
