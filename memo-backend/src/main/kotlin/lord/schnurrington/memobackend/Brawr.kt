@@ -15,4 +15,16 @@ class BrawrController {
     fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String): Brawr {
         return Brawr(counter.incrementAndGet(), "Braawwwwr $name")
     }
+    
+    @GetMapping("/home")
+    fun home(): Brawr {
+        //TODO: implement Backend for Homepage
+        return Brawr(counter.incrementAndGet(), "you entered the Homepage")
+    }
+    
+    @GetMapping("/tasks")
+    fun tasks(): List<Brawr> {
+        //TODO: implement Backend for Homepage
+        return listOf(Brawr(counter.incrementAndGet(), "you entered the TaskList"))
+    }
 }
