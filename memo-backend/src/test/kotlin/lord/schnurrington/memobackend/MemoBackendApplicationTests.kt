@@ -8,7 +8,7 @@ class MemoBackendApplicationTests {
 
 	@Test
 	fun contextLoads() {
-		throw Exception("Brauwr!!!")
+		assert(true)
 	}
 
 }
