@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: memo-backend
+        working-directory: memo
 
     steps:
       - uses: actions/checkout@v2
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: memo-backend
+        working-directory: memo
 
     steps:
       - uses: actions/checkout@v2
