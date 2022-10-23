@@ -23,8 +23,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     runtimeOnly("org.postgresql:postgresql:42.5.0")
-    implementation("org.jetbrains.exposed:exposed-core:0.39.2")
-    implementation("org.jetbrains.exposed:exposed-jdbc:0.39.2")
+    implementation("org.jetbrains.exposed:exposed-core:0.40.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.40.1")
+    implementation("org.liquibase:liquibase-core:4.17.0")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.4")
 }
 
